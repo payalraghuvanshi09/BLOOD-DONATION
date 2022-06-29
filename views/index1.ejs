@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Blood Donation App</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+    </script>
+    <script src="../js/filterDropDown.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+    </script>
+    <!-- Select2 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
+    <script src="../js/filterDropDown.js"></script>
+    <script>
+        // initialising dt table
+        $(document).ready(function () {
+
+            $('#example').DataTable({
+                // Definition of filter to display
+                filterDropDown: {
+                    columns: [
+                        {
+                            idx: 2
+                        },
+                        {
+                            idx: 4
+                        }
+                    ],
+                    bootstrap: true
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="container text-center">
+            <div class="jumbotron">
+                <h2 style="color:green;">
+                    Blood Donner List
+                </h2>
+
+                <p> Brahmin Samaj Madhya Pradesh</p>
+                <br>
+                <p> रक्त दान महा दान</p>
+
+            </div>
+        </div>
+
+
+        <!-- <div class="container" style=" position: relative; text-align: center; color: white;">
+            <img src="../images/preview.jpg" alt="blooddonner" style="width:100%;">
+            <div class="para" style="position: absolute;
+            top: 50%;
+            color: white;
+            text-shadow: #282d32;
+            left: 50%;
+            transform: translate(-50%, -50%);">
+                <h2> Blood Donner List</h2>
+                <p> Brahmin Samaj Madhya Pradesh</p>
+                <br>
+                <p> रक्त दान महा दान</p>
+
+            </div> -->
+
+        <!-- </div> -->
+    </header>
+    <form>
+        <div class="container">
+
+
+            <div class="category-filter">
+                <div class="col-md-6">
+                    <select name="" id="myInput" class="form-control filter">
+                        <option value="">City</option>
+                        <option>Indore</option>
+                        <option>Ahemdabad</option>
+                        <option>Bhopal</option>
+                        <option>Delhi</option>
+                        <option>Khargone</option>
+                        <option>Khandwa</option>
+                        <option>Rewa</option>
+                        <option>Ujjain</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+
+                    <select name="" id="myIpt" class="form-control filter">
+                        <option value="">Blood Group</option>
+                        <option>O+</option>
+                        <option>O-</option>
+                        <option>A+</option>
+                        <option>A-</option>
+                        <option>B+</option>
+                        <option>B-</option>
+                        <option>AB+</option>
+                        <option>AB-</option>
+                    </select>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- <div class="container">
+            <div class="col-md-6">
+                <input class="form-control" id="myInput" type="text" class="form-control" placeholder="City">
+            </div>
+            <div class="col-md-6">
+                <input class="form-control" id="myIpt" type="text" class="form-control" placeholder="Blood Group">
+            </div>
+        </div> -->
+    </form>
+    <!-- <div class="container">
+        <div class="card">
+            <div class="card-title">
+                <div class="col-md-6"> -->
+    <!-- <label> Blood Group </label> 
+
+     <br> 
+     <br> 
+     <label style="margin: -10%;" for="bloodGroup">  -->
+
+    <!-- <input  class="form-ctrl" id="myIpt" type="text" placeholder="Blood Group"></label> 
+
+    
+                        br <select id="single" class="js-states form-control"> 
+   
+     </select> 
+    </div> 
+     <br> 
+     <div class="col-md-6">
+     <label> City </label> 
+     <label for="City">   <input class="form-control" id="myInput" type="text" placeholder="City"></label> -->
+
+    <!-- <select class="js-states form-control"> 
+     <option>Indore</option> 
+    <option>Ahemdabad</option> 
+     <option>Bhopal</option> 
+     <option>Delhi</option> 
+     </select> 
+    <hr> 
+     </div> 
+     </div>   -->
+
+    <hr>
+
+    <div class="container">
+        <div class="card-body">
+            <table class="example">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Sr.</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">City</th>
+                        <th scope="col">Complete Address</th>
+                        <th scope="col">Blood Group</th>
+                        <th scope="col">Mobile Number1</th>
+                        <th scope="col">Mobile Number2</th>
+                    </tr>
+                </thead>
+                <tbody id="myTable">
+                    <tr>
+                        <% for(var i=0; i < table.length; i++) { %>
+                            <td>
+                                <%= table[i].sr %>
+                            </td>
+                            <td>
+                                <%= table[i].name %>
+                            </td>
+                            <td>
+                                <%= table[i].city %>
+                            </td>
+                            <td>
+                                <%= table[i].completeAddress %>
+                            </td>
+                            <td>
+                                <%= table[i].bloodGroup%>
+                            </td>
+                            <td>
+                                <%= table[i].mobileNumber1 %>
+                            </td>
+                            <td>
+                                <%= table[i].mobileNumber2 %>
+                            </td>
+                    </tr>
+                    <% } %>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            // $("#myInput").on("keyup", function () {
+            $(".filter").click(function () {
+
+
+                var value1 = $('#myInput').val().toLowerCase();
+                var value2 = $('#myIpt').val().toLowerCase();
+                console.log("value1", value1);
+                console.log("value2", value2);
+                $("#myTable tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value1) > -1);
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value2) > -1);
+                });
+            });
+
+
+            // $("#myIpt").click(function () {
+            // var value = $('#myIpt').val().toLowerCase();
+            // $("#myTable tr").filter(function () {
+            //     $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            // });
+            // });
+        });    
+    </script>
+
+    <script>
+        //    $("document").ready(function () {
+        $("#filterTable").dataTable({
+            "searching": true
+        });
+        //Get a reference to the new datatable
+        var table = $('#filterTable').DataTable();
+        $("#filterTable_filter.dataTables_filter").append($("#myInput"));
+        var categoryIndex = 0;
+        $("#filterTable th").each(function (i) {
+            if ($($(this)).html() == "Category") {
+                categoryIndex = i; return false;
+            }
+        });
+    </script>
+
+    <div class="container-fluid">
+        <div class="footer-dark" style="padding: 50px 0; color: #f0f9ff; background-color:#282d32">
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3 item">
+                            <h3 style=" margin-top:0;
+                        margin-bottom:12px;
+                        font-weight:bold;
+                        font-size:16px;">Initiated By:</h3>
+                            <ul style=" padding:0;
+                        list-style:none;
+                        line-height:1.6;
+                        font-size:14px;
+                        margin-bottom:0;">
+                                <li><a style="color:inherit;
+                                text-decoration:none;
+                                opacity:0.6;" href="#">Sunil Devrai</a></li>
+                                <li><a style="color:inherit;
+                                text-decoration:none;
+                                opacity:0.6;" href="#">+91-95221 43777</a></li>
+                                <li><a style="color:inherit;
+                                text-decoration:none;
+                                opacity:0.6;" href="#">Barwani</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 col-md-3 item">
+                            <h3 style=" margin-top:0;
+                        margin-bottom:12px;
+                        font-weight:bold;
+                        font-size:16px;">Managed By</h3>
+                            <ul style=" padding:0;
+                        list-style:none;
+                        line-height:1.6;
+                        font-size:14px;
+                        margin-bottom:0;">
+                                <li><a style="color:inherit;
+                                text-decoration:none;
+                                opacity:0.6;" href="#">Krishna Waghe</a></li>
+                                <li><a style="color:inherit;
+                                text-decoration:none;
+                                opacity:0.6;" href="#">Vinay Savner</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 item text">
+                            <h3 style=" margin-top:0;
+                        margin-bottom:12px;
+                        font-weight:bold;
+                        font-size:16px;">Exergy infotech</h3>
+
+                            <!-- <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p> -->
+                        </div>
+                        <!-- <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+                </div> -->
+                        <p class="copyright">Exergy Infotech © 2021</p>
+                        <p><a href="mailto:info@exergyinfotech.com"></a>info@exergyinfotech.com</p>
+
+
+                    </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
